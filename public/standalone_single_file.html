@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>내포신도시 RB7조성공사 및 대학1 관리공사 현장안내소</title>
+  <meta name="description" content="충청남도개발공사 내포신도시 RB7조성공사 및 대학1 관리공사 현장 안내, 안전 수칙, 도면 뷰어 및 우회도로 안내" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans KR', 'Plus Jakarta Sans', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- TOP BAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-8 px-4 sm:px-6 py-3.5">
+      <a href="#" class="text-base sm:text-lg font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+        <span>내포신도시 RB7 현장안내소</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold text-slate-600">
+        <a href="#overview" class="hover:text-blue-700 transition">공사 개요</a>
+        <a href="#drawings" class="hover:text-blue-700 transition">도면 뷰어</a>
+        <a href="#safety-traffic" class="hover:text-blue-700 transition">안전·우회 안내</a>
+        <a href="#schedule" class="hover:text-blue-700 transition">공정 현황</a>
+        <a href="#contact" class="hover:text-blue-700 transition">비상 연락처</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="px-3.5 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition shadow-sm">
+          현장 문의 접수
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH CUTE 3D CHARACTER -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/50 border-b border-slate-200 pt-8 pb-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left: Headline & Key Facts -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+            <span class="text-blue-700 font-bold">충청남도개발공사</span>
+            <span aria-hidden="true">·</span>
+            <span>내포신도시 개발사업</span>
+            <span aria-hidden="true">·</span>
+            <span>공식 시민 안내 포털</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            내포신도시 RB7조성공사 <br class="hidden sm:inline" />
+            <span class="text-blue-700">및 대학1 관리공사</span>
+          </h1>
+
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+            충남도청(내포) 신도시 체계적 발전 도모 및 주민 정주여건 개선을 위한 기반조성 공사가 진행됩니다. 
+            시민 여러분의 안전한 보행과 차량 통행을 위한 실시간 도면 및 안전 우회로 안내를 제공합니다.
+          </p>
+
+          <!-- Key Project Strip -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600 pt-2 border-t border-slate-200">
+            <div>
+              <span class="font-bold text-slate-900 block">공사 위치</span>
+              <span>충청남도 홍성군 홍북읍 신경리 510-74 일원</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-900 block">공사 기간 (총 510일)</span>
+              <span class="mono">2026.06.15 ~ 2027.11.06</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-900 block">발주처 / 시공사</span>
+              <span>충청남도개발공사 / 주식회사 동아엔텍</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-900 block">총 공사금액</span>
+              <span class="mono font-bold text-blue-700">5,470 백만원 (약 54.7억원)</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#drawings" class="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition shadow-sm inline-flex items-center gap-2">
+              <span>현장 도면 확대 뷰어 보기</span>
+              <span>→</span>
+            </a>
+            <a href="#safety-traffic" class="px-4 py-2.5 text-sm font-semibold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 rounded-xl transition">
+              안전 수칙 & 도로 우회 안내
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Cute 3D Construction Character -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center">
+          <!-- Speech Bubble -->
+          <div class="relative mb-3 bg-white p-5 rounded-2xl shadow-xl border border-blue-100 max-w-sm text-left">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-xs font-bold text-blue-900">현장 안전 마스코트 · 내포 반장</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              “안녕하세요! 안전모 꾹 눌러쓰고 도면을 꼼꼼히 살피며 <strong>단 한 건의 안전사고 없는 명품 신도시</strong>를 만들겠습니다. 도면과 우회 통행로를 아래에서 편하게 확인해 보세요!”
+            </p>
+            <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-r border-b border-blue-100 rotate-45"></div>
+          </div>
+
+          <!-- Character Image -->
+          <div class="relative group">
+            <div class="w-64 sm:w-72 md:w-80 rounded-3xl bg-white p-2 border border-slate-200 shadow-2xl overflow-hidden">
+              <img src="/assets/aistudio/____ef33bd39.jpg" alt="귀여운 3D 현장 캐릭터" class="w-full h-auto object-contain rounded-2xl">
+            </div>
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow border border-slate-700 whitespace-nowrap">
+              현장대리인 양기봉 소장 & 안전관리팀
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Numbers Strip -->
+      <div class="mt-12 pt-8 border-t border-slate-200 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div>
+          <span class="text-xs text-slate-500">총 공사금액</span>
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 mono">5,470 <span class="text-xs font-sans text-slate-500 font-normal">백만원</span></div>
+        </div>
+        <div>
+          <span class="text-xs text-slate-500">전체 공사 일수 (변경 1회)</span>
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 mono">511 <span class="text-xs font-sans text-slate-500 font-normal">일간</span></div>
+        </div>
+        <div>
+          <span class="text-xs text-slate-500">총 토공량 (절·성토)</span>
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 mono">133,573 <span class="text-xs font-sans text-slate-500 font-normal">㎥</span></div>
+        </div>
+        <div>
+          <span class="text-xs text-slate-500">환경·안전 시설</span>
+          <div class="text-base sm:text-lg font-extrabold text-emerald-700 tracking-tight leading-snug">
+            대학1: 5개소, RB7: 4개소
+            <span class="block text-xs font-semibold text-emerald-800">침사지 (총 9개소)</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-0.5">세륜기 1식 · 살수차 상시</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW SECTION -->
+  <section id="overview" class="py-14 bg-white border-b border-slate-200 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="mb-8">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">법정 공사안내판 규격</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">공사 개요 및 6대 주요 공종</h2>
+        <p class="text-slate-600 text-sm mt-1">현장 설치 공식 공사안내판 및 세부 공종별 물량 현황입니다.</p>
+      </div>
+
+      <!-- Grid Cards -->
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 md:p-8 mb-8 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div>
+            <span class="text-xs font-semibold text-slate-500 block">공사명</span>
+            <p class="text-sm font-bold text-slate-900">내포신도시 RB7조성공사 및 대학1 관리공사</p>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-slate-500 block">공사위치</span>
+            <p class="text-sm font-bold text-slate-900">충청남도 홍성군 홍북읍 신경리 510-74 일원</p>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-slate-500 block">발주자 / 공사감독자</span>
+            <p class="text-sm font-bold text-slate-900">충청남도개발공사</p>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-slate-500 block">시공자 / 현장대리인</span>
+            <p class="text-sm font-bold text-slate-900">주식회사 동아엔텍 (현장대리인 양기봉)</p>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-slate-500 block">설계자</span>
+            <p class="text-sm font-bold text-slate-900">㈜케이지엔지니어링 종합건축사 사무소, 드림이앤디</p>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-slate-500 block">공사기간</span>
+            <p class="text-sm font-bold text-slate-900 mono">2026.06.15 ~ 2027.11.06 (510일)</p>
+          </div>
+          <div class="md:col-span-2 lg:col-span-3 pt-4 border-t border-slate-200">
+            <span class="text-xs font-semibold text-slate-500 block mb-1">사업목적</span>
+            <p class="text-xs sm:text-sm text-slate-700 bg-white p-3.5 rounded-xl border border-slate-200 leading-relaxed">
+              충남도청(내포) 신도시 개발사업 개발계획(26차) 및 실시계획(24차) 변경과 관련하여 내포신도시의 체계적인 발전 도모 및 주민의 정주여건 개선을 목적으로 공사를 추진함.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Major Work Cards -->
+      <h3 class="text-lg font-bold text-slate-900 mb-4">6대 주요 공종별 정밀 수량</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- 1) 토공사 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 text-amber-700">1) 토공사</h4>
+          <ul class="text-xs space-y-1.5">
+            <li class="flex justify-between"><span>절토 (흙깎기):</span><span class="font-bold mono">90,170 ㎥</span></li>
+            <li class="flex justify-between"><span>성토 (흙쌓기):</span><span class="font-bold mono">43,403 ㎥</span></li>
+            <li class="flex justify-between"><span>벌개제근:</span><span class="font-bold mono">3,491 ㎡</span></li>
+            <li class="flex justify-between"><span>수목이식:</span><span class="font-bold mono">90 주</span></li>
+          </ul>
+        </div>
+
+        <!-- 2) 포장공 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 text-indigo-700">2) 포장공</h4>
+          <ul class="text-xs space-y-1.5">
+            <li class="flex justify-between"><span>표층 (아스콘):</span><span class="font-bold mono">2,844 ㎡</span></li>
+            <li class="flex justify-between"><span>보조기층:</span><span class="font-bold mono">3,336 ㎡</span></li>
+            <li class="flex justify-between"><span>보도블록 포장:</span><span class="font-bold mono">2,412 ㎡</span></li>
+            <li class="flex justify-between"><span>도로경계석:</span><span class="font-bold mono">1,151 m</span></li>
+          </ul>
+        </div>
+
+        <!-- 3) 우수공 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 text-blue-700">3) 우수공</h4>
+          <ul class="text-xs space-y-1.5">
+            <li class="flex justify-between"><span>U형 측구:</span><span class="font-bold mono">657 m</span></li>
+            <li class="flex justify-between"><span>산마루측구:</span><span class="font-bold mono">443 m</span></li>
+            <li class="flex justify-between"><span>흄관 (배수관):</span><span class="font-bold mono">608 m</span></li>
+            <li class="flex justify-between"><span>PC 맨홀:</span><span class="font-bold mono">21 개소</span></li>
+          </ul>
+        </div>
+
+        <!-- 4) 오수공 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 text-teal-700">4) 오수공</h4>
+          <ul class="text-xs space-y-1.5">
+            <li class="flex justify-between"><span>PE 다중관:</span><span class="font-bold mono">368 m</span></li>
+            <li class="flex justify-between"><span>PVC 이중관:</span><span class="font-bold mono">50 m</span></li>
+            <li class="flex justify-between"><span>PC 맨홀:</span><span class="font-bold mono">10 개소</span></li>
+          </ul>
+        </div>
+
+        <!-- 5) 상수공 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 text-cyan-700">5) 상수공</h4>
+          <ul class="text-xs space-y-1.5">
+            <li class="flex justify-between"><span>PE 수도관 (D100mm):</span><span class="font-bold mono">423 m</span></li>
+            <li class="flex justify-between"><span>지상 소화전:</span><span class="font-bold mono">4 EA</span></li>
+          </ul>
+        </div>
+
+        <!-- 6) 부대공 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+          <h4 class="text-sm font-bold text-slate-900 mb-2 text-emerald-700">6) 부대공</h4>
+          <ul class="text-xs space-y-1.5">
+            <li class="flex justify-between"><span>침사지:</span><span class="font-bold mono text-right">대학1: 5개소, RB7: 4개소</span></li>
+            <li class="flex justify-between"><span>세륜기 1식 및 살수차:</span><span class="font-bold mono">상시 운영</span></li>
+            <li class="flex justify-between"><span>가설울타리:</span><span class="font-bold mono">276 공판</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLUEPRINT & SCHEDULE VIEWER -->
+  <section id="drawings" class="py-14 bg-slate-50 border-b border-slate-200 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">인터랙티브 도면 확대 팝업</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">현장 도면 & 공정표 뷰어</h2>
+          <p class="text-slate-600 text-sm mt-1">도면을 클릭하여 확대/축소하고 드래그하여 상세 구획을 확인하세요.</p>
+        </div>
+
+        <!-- Drawing Selector Buttons -->
+        <div class="flex items-center gap-1.5 p-1 bg-white border border-slate-200 rounded-xl">
+          <button onclick="switchDrawing('rb7')" id="tab-rb7" class="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-sm transition">
+            RB7 평면도
+          </button>
+          <button onclick="switchDrawing('univ1')" id="tab-univ1" class="px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition">
+            대학1 평면도
+          </button>
+          <button onclick="switchDrawing('schedule')" id="tab-schedule" class="px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition">
+            공사예정공정표 [변경 1회]
+          </button>
+        </div>
+      </div>
+
+      <!-- Viewer Container -->
+      <div class="relative bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-xl h-[600px] flex items-center justify-center">
+        <!-- Control buttons floating at top right -->
+        <div class="absolute top-4 right-4 z-20 flex items-center gap-2 bg-slate-900/90 border border-slate-700 rounded-xl p-1.5 backdrop-blur text-white text-xs">
+          <button onclick="zoomIn()" class="px-2.5 py-1 hover:bg-slate-800 rounded font-bold">확대 (+)</button>
+          <button onclick="zoomOut()" class="px-2.5 py-1 hover:bg-slate-800 rounded font-bold">축소 (-)</button>
+          <span id="zoom-level" class="px-2 font-mono text-slate-300">100%</span>
+          <button onclick="resetZoom()" class="px-2.5 py-1 hover:bg-slate-800 rounded text-slate-300">초기화</button>
+        </div>
+
+        <div class="absolute top-4 left-4 z-20 text-white text-xs bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-700">
+          <span id="drawing-title" class="font-bold">RB7 블록 단지조성 평면도</span>
+        </div>
+
+        <!-- Pan Zoom Canvas Area -->
+        <div id="canvas-container" class="w-full h-full flex items-center justify-center overflow-hidden cursor-grab active:cursor-grabbing select-none" onmousedown="startDrag(event)" onmousemove="doDrag(event)" onmouseup="stopDrag()" onmouseleave="stopDrag()">
+          <img id="viewer-img" src="/assets/drawings/rb7_plan.png" alt="현장 도면" class="max-w-none w-[1000px] h-auto object-contain rounded bg-white shadow-2xl transition-transform duration-75" draggable="false">
+        </div>
+
+        <div class="absolute bottom-4 left-4 z-20 text-slate-400 text-xs bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-800 pointer-events-none">
+          마우스 드래그로 이동 가능 · 휠 및 버튼으로 확대
+        </div>
+
+        <div class="absolute bottom-4 right-4 z-20 flex items-center gap-2">
+          <a id="pdf-download-btn" href="/assets/aistudio/RB7___f7b97a33.pdf" target="_blank" class="px-3 py-1.5 text-xs font-semibold bg-white/20 hover:bg-white/30 text-white rounded-lg border border-white/30 backdrop-blur transition">
+            원본 PDF 보기
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY & TRAFFIC NOTICE SECTION WITH SPEECH BUBBLE -->
+  <section id="safety-traffic" class="py-14 bg-white border-b border-slate-200 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="mb-8">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">안내 섹션</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">현장 안전 수칙 및 도로 우회 안내</h2>
+        <p class="text-slate-600 text-sm mt-1">내포 반장 캐릭터가 시민 여러분의 안전한 통행과 쾌적한 환경을 위해 안내해 드립니다.</p>
+      </div>
+
+      <!-- Character Speech Bubble Layout -->
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 md:p-8 mb-8 shadow-sm">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-4 flex flex-col items-center text-center">
+            <div class="w-48 h-48 rounded-2xl overflow-hidden bg-white p-2 border border-slate-200 shadow-md mb-3">
+              <img src="/assets/aistudio/____ef33bd39.jpg" alt="내포 반장 캐릭터" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <h4 class="text-sm font-bold text-slate-900">현장 안전 지킴이 · 내포 반장</h4>
+            <p class="text-xs text-slate-500">“시민 여러분의 안전이 최우선입니다!”</p>
+          </div>
+
+          <div class="lg:col-span-8 space-y-4">
+            <!-- Comic Speech Bubble -->
+            <div class="bg-blue-50 border-2 border-blue-200 rounded-2xl p-5 text-slate-800 relative">
+              <div class="text-xs font-bold text-blue-900 mb-1">내포 반장의 안전 & 우회로 안내 말풍선</div>
+              <p class="text-base sm:text-lg font-semibold text-slate-900 leading-snug">
+                “주민 여러분, 중로 1-6호선과 중로 3-40호선 접속 구간에는 덤프트럭이 자주 출입해요! 
+                신호수 분들의 유도 신호에 따라 안전 펜스 안쪽의 <strong>보행자 전용 임시 통로</strong>로 천천히 이동해 주세요!”
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 text-xs">
+                <span class="font-bold text-slate-900 block mb-1">🚧 보행자 통행 주의</span>
+                <span class="text-slate-600">공사 경계 가설울타리(EGI 펜스) 접근 및 기대기 금지, 안전거리 5m 유지.</span>
+              </div>
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 text-xs">
+                <span class="font-bold text-slate-900 block mb-1">🚗 공사차량 서행 운행</span>
+                <span class="text-slate-600">출퇴근 시간(07:30~09:00, 17:30~19:00) 대형 덤프 시속 20km 이하 서행.</span>
+              </div>
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 text-xs">
+                <span class="font-bold text-slate-900 block mb-1">💧 비산먼지 저감 대책</span>
+                <span class="text-slate-600">전자동 세륜기 1식 가동 및 고압 살수차 1일 4회 이상 운행으로 도로 청결 유지.</span>
+              </div>
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 text-xs">
+                <span class="font-bold text-slate-900 block mb-1">🌧️ 침사지 가동 (대학1: 5개소, RB7: 4개소)</span>
+                <span class="text-slate-600">집중호우 시 토사 유출을 방지하기 위해 단지 내 총 9개소 침사지 및 산마루측구(443m) 상시 관리.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY CONTACT & INQUIRY -->
+  <section id="contact" class="py-14 bg-slate-50 border-b border-slate-200 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="mb-8">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">상시 소통망</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">비상 연락처 및 주민 문의</h2>
+        <p class="text-slate-600 text-sm mt-1">현장 불편사항이나 문의사항이 있으시면 즉시 연락주시기 바랍니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <span class="text-[11px] font-bold text-blue-700 block">발주처 / 감독부서</span>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">충청남도개발공사</h4>
+          <p class="text-xs text-slate-500">신도시사업처 단지조성팀</p>
+          <a href="tel:041-630-4400" class="mt-3 block text-center py-2 bg-blue-50 text-blue-700 font-bold rounded-lg text-xs mono">041-630-4400</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <span class="text-[11px] font-bold text-blue-700 block">시공사 현장사무소</span>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">주식회사 동아엔텍</h4>
+          <p class="text-xs text-slate-500">현장대리인 양기봉 소장</p>
+          <a href="tel:041-631-0815" class="mt-3 block text-center py-2 bg-blue-50 text-blue-700 font-bold rounded-lg text-xs mono">041-631-0815</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <span class="text-[11px] font-bold text-blue-700 block">설계사</span>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">㈜케이지엔지니어링</h4>
+          <p class="text-xs text-slate-500">드림이앤디 설계감리팀</p>
+          <a href="tel:02-2182-3000" class="mt-3 block text-center py-2 bg-blue-50 text-blue-700 font-bold rounded-lg text-xs mono">02-2182-3000</a>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <span class="text-[11px] font-bold text-rose-700 block">긴급 구호 / 재난</span>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">홍성소방서 / 경찰서</h4>
+          <p class="text-xs text-slate-500">24시간 긴급 재난 상황실</p>
+          <a href="tel:119" class="mt-3 block text-center py-2 bg-rose-50 text-rose-700 font-bold rounded-lg text-xs mono">국번없이 119 / 112</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-bold text-white">내포신도시 RB7조성공사 및 대학1 관리공사 현장안내소</p>
+        <p class="text-[11px] text-slate-500 mt-1">발주: 충청남도개발공사 · 시공: 주식회사 동아엔텍 · 주소: 충청남도 홍성군 홍북읍 신경리 510-74</p>
+      </div>
+      <p class="text-slate-500">© 2026 충청남도개발공사 & 주식회사 동아엔텍. 무재해 안전 시공</p>
+    </div>
+  </footer>
+
+  <!-- VANILLA JS SCRIPT FOR VIEWER & INTERACTION -->
+  <script>
+    let currentScale = 1;
+    let posX = 0, posY = 0;
+    let isDragging = false;
+    let startX = 0, startY = 0;
+
+    const drawings = {
+      rb7: {
+        title: 'RB7 블록 단지조성 평면도',
+        img: '/assets/drawings/rb7_plan.png',
+        pdf: '/assets/aistudio/RB7___f7b97a33.pdf'
+      },
+      univ1: {
+        title: '대학1 관리공사 평면도',
+        img: '/assets/drawings/univ1_plan.png',
+        pdf: '/assets/aistudio/__1___07486039.pdf'
+      },
+      schedule: {
+        title: '공사예정공정표 [변경 1회]',
+        img: '/assets/drawings/schedule_table_rev1.png',
+        pdf: '/assets/aistudio/__________427bb8aa.pdf'
+      }
+    };
+
+    function updateTransform() {
+      const img = document.getElementById('viewer-img');
+      img.style.transform = `translate(${posX}px, ${posY}px) scale(${currentScale})`;
+      document.getElementById('zoom-level').innerText = Math.round(currentScale * 100) + '%';
+    }
+
+    function zoomIn() {
+      currentScale = Math.min(3.5, currentScale + 0.25);
+      updateTransform();
+    }
+
+    function zoomOut() {
+      currentScale = Math.max(0.5, currentScale - 0.25);
+      updateTransform();
+    }
+
+    function resetZoom() {
+      currentScale = 1;
+      posX = 0;
+      posY = 0;
+      updateTransform();
+    }
+
+    function switchDrawing(key) {
+      const data = drawings[key];
+      if (!data) return;
+      document.getElementById('viewer-img').src = data.img;
+      document.getElementById('drawing-title').innerText = data.title;
+      document.getElementById('pdf-download-btn').href = data.pdf;
+      
+      // Update tab styles
+      ['rb7', 'univ1', 'schedule'].forEach(k => {
+        const btn = document.getElementById('tab-' + k);
+        if (k === key) {
+          btn.className = 'px-3.5 py-1.5 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-sm transition';
+        } else {
+          btn.className = 'px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition';
+        }
+      });
+
+      resetZoom();
+    }
+
+    function startDrag(e) {
+      isDragging = true;
+      startX = e.clientX - posX;
+      startY = e.clientY - posY;
+    }
+
+    function doDrag(e) {
+      if (!isDragging) return;
+      posX = e.clientX - startX;
+      posY = e.clientY - startY;
+      updateTransform();
+    }
+
+    function stopDrag() {
+      isDragging = false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "내포신도시 RB7조성공사 현장안내소",
+  "description": "충청남도개발공사 내포신도시 RB7조성공사 및 대학1 관리공사 현장 안내, 안전 수칙, 도면 뷰어 및 우회도로 안내 포털",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
